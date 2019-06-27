@@ -1,5 +1,5 @@
 {
-  "name": "@xtnd-dynamics/xtypes",
+  "name": "@xtnd-dynamics/types",
   "version": "0.1.3",
   "description": "The XTND DYNAMICS Types Framework for TypeScript",
   "scripts": {
@@ -9,12 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xtnd-dynamics/xtypes.git"
+    "url": "git+https://github.com/xtnd-dynamics/types.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xtnd-dynamics/xtypes/issues"
+    "url": "https://github.com/xtnd-dynamics/types/issues"
   },
-  "homepage": "https://github.com/xtnd-dynamics/xtypes#readme",
-  "private": false
+  "homepage": "https://github.com/xtnd-dynamics/types#readme",
+  "private": false,
+  "devDependencies": {
+    "lint": "^0.7.0"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "typescript": "^3.5.2"
+  }
 }
