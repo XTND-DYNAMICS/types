@@ -36,6 +36,12 @@ export enum AmadeusPaymentMethod {
     TravelAccount = "travelaccount"
 }
 
+export enum AmadeusPassengerType {
+    Main = "main",
+    Assistant = "assistant",
+    Infant = "infant"
+}
+
 
 // INTERFACES
 
@@ -169,8 +175,8 @@ export interface IAmadeusBooking {
 
 export interface IAmadeusTransferPassenger {
     type: string;
-    title: string;
-    age: string;
+    title?: string;
+    age?: string;
     firstName: string;
     lastName: string;
     mobilePhone: string;
