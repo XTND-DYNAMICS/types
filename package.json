@@ -1,5 +1,5 @@
 {
-  "name": "xtypes",
+  "name": "@xtnd-dynamics/xtypes",
   "version": "0.1.0",
   "description": "The XTND DYNAMICS Types Framework for TypeScript",
   "main": "index.js",
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/xtnd-dynamics/xtypes/issues"
   },
-  "homepage": "https://github.com/xtnd-dynamics/xtypes#readme"
+  "homepage": "https://github.com/xtnd-dynamics/xtypes#readme",
+  "private": false
 }
