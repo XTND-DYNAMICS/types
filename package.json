@@ -1,6 +1,6 @@
 {
   "name": "@xtnd-dynamics/xtypes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The XTND DYNAMICS Types Framework for TypeScript",
   "main": "index.js",
   "scripts": {
