@@ -2,6 +2,11 @@
   "name": "@xtnd-dynamics/xtypes",
   "version": "0.1.3",
   "description": "The XTND DYNAMICS Types Framework for TypeScript",
+  "scripts": {
+    "preversion": "npm run-script lint",
+    "version": "npm run-script format && git add -A",
+    "postversion": "git push && git push --tags && npm publish"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xtnd-dynamics/xtypes.git"

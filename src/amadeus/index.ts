@@ -117,9 +117,7 @@ export interface IAmadeusTransfer {
     dropoff: IAmadeusTransferActivity;
     baggage?: AmadeusLuggageType;
     vehicle: IAmadeusVehicle;
-    quotation: {
-        quote: Array<IAmadeusQuotation>;
-    };
+    quotation: IAmadeusQuotation;
     multimedia?: any[];
     cancellationPolicy: any[];
     paymentType: string;
@@ -138,7 +136,7 @@ export interface IAmadeusVehicle {
 }
 
 export interface IAmadeusQuotation {
-    quote: IAmadeusQuote;
+    quote: Array<IAmadeusQuote>;
 }
 
 export interface IAmadeusQuote {
