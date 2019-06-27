@@ -195,29 +195,29 @@ export interface IAmadeusAvailabilityRequest extends IAmadeusRequest {
     dropoff: IAmadeusTransferActivity;
 }
 
-export interface IAmadeusBookingRequest extends IAmadeusRequest {
+export interface IAmadeusBookingRequestBody {
 
-    languageCode: string;
-    altLanguageCode: string;
+    languageCode?: string;
+    altLanguageCode?: string;
 
     transferServiceType: string;
-    subProviderCode: string;
-    subProviderName: string;
+    subProviderCode?: string;
+    subProviderName?: string;
 
     pickup: IAmadeusTransferActivity;
     dropoff: IAmadeusTransferActivity;
 
-    duration: string;
+    duration?: string;
     numberOfPassengers: number;
 
-    pnrRecordLocator: string;
-    flightNumber: string;
+    pnrRecordLocator?: string;
+    flightNumber?: string;
 
     passenger: Array<IAmadeusTransferPassenger>;
 
-    baggage: IAmadeusBaggageDefinition;
+    baggage?: IAmadeusBaggageDefinition;
 
-    remark: string;
+    remark?: string;
 
     quotation: IAmadeusQuotation;
 
@@ -234,14 +234,17 @@ export interface IAmadeusBookingRequest extends IAmadeusRequest {
 
     vehicle: IAmadeusVehicle;
 
-    driver: IAmadeusDriver;
-    services: Array<IAmadeusService>;
-    equipment: Array<IAmadeusEquipment>;
+    driver?: IAmadeusDriver;
+    services?: Array<IAmadeusService>;
+    equipment?: Array<IAmadeusEquipment>;
 
     amadeusTransactionID: string;
-    amadeusOfficeID: string;
+    amadeusOfficeID?: string;
 
-    travelAgencyIATA: string;
+    travelAgencyIATA?: string;
+}
+
+export interface IAmadeusBookingRequest extends IAmadeusRequest, IAmadeusBookingRequestBody {
 }
 
 export interface IAmadeusDriver {
