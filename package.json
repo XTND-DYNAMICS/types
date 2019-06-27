@@ -1,0 +1,19 @@
+{
+  "name": "xtypes",
+  "version": "0.1.0",
+  "description": "The XTND DYNAMICS Types Framework for TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtnd-dynamics/xtypes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xtnd-dynamics/xtypes/issues"
+  },
+  "homepage": "https://github.com/xtnd-dynamics/xtypes#readme"
+}
